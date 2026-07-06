@@ -1,6 +1,6 @@
 # Cadastro de Carro
 
-Sistema simples de cadastro de veículos em Python com persistência em banco de dados MySQL.
+Sistema de cadastro de veículos em Python com persistência em banco de dados MySQL.
 
 ## Funcionalidades implementadas
 
@@ -22,6 +22,24 @@ Sistema simples de cadastro de veículos em Python com persistência em banco de
   - Atualizar carro
   - Excluir carro
 
+## Atividade extra
+
+Também foi criada uma interface gráfica simples para o sistema usando Tkinter.
+
+A tela permite acessar:
+
+- Cadastro de marcas;
+- Cadastro de modelos;
+- Cadastro de carros;
+- Listagem dos registros em tabelas;
+- Atualização e exclusão dos dados cadastrados.
+
+Arquivo da interface gráfica:
+
+```text
+src/frontend.py
+```
+
 ## Banco de dados
 
 O script de criação do banco está em:
@@ -36,7 +54,7 @@ O banco utilizado pelo projeto se chama:
 concessionaria
 ```
 
-## Como executar
+## Como executar o sistema pelo terminal
 
 1. Crie o banco de dados executando o arquivo `sql/dump.sql` no MySQL.
 2. Confira os dados de conexão no arquivo `src/database.py`.
@@ -46,8 +64,18 @@ concessionaria
 pip install mysql-connector-python
 ```
 
-4. Execute o sistema:
+4. Execute o sistema no modo terminal:
 
 ```bash
 python src/main.py
 ```
+
+## Como executar a interface gráfica
+
+Com o banco de dados configurado, execute:
+
+```bash
+python src/frontend.py
+```
+
+A interface será aberta em uma janela com abas para Marcas, Modelos e Carros.
